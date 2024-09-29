@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="/CSS/login.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Space<span>TD</span></a>
+
+      <div class="navbar-nav">
+        <a href="home.html">Home</a>
+        <a href="Vehicle.html">Vehicles</a>
+        <a href="launches.html">Launches</a>
+        <a href="Programs.html">Programs</a>
+        <a href="#">Sign Up</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="hamburger"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <div class="body1">
+      <div class="container">
+        <div class="main-box login">
+          <h1>Login</h1>
+          <form action="" onsubmit="formValidation1(event)">
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-envelope"></i></span>
+              <input type="text" id="email1" required />
+              <label for="">Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+              <input type="password" id="password1" required />
+              <label for="">Password</label>
+            </div>
+            <div class="check">
+              <label for=""
+                ><input type="checkbox" id="checkedd1" />Remember Me</label
+              >
+              <a href="">Forget Password</a>
+            </div>
+            <button type="submit" class="main-btn">Login</button>
+            <div class="register">
+              <p>
+                don't have an account?
+                <a href="#" class="register-link">Sign Up here</a>
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <div class="main-box register">
+          <h1>Sign Up</h1>
+          <form action="" onsubmit="formValidation(event)">
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-user"></i></span>
+              <input type="text" id="username" required />
+              <label for="">Username</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-envelope"></i></span>
+              <input type="text" id="email" required />
+              <label for="">Email</label>
+            </div>
+            <div class="gender" id="gender">
+              <span class="icon"><i class="bx bx-male-female"></i></span>
+              <label for="">Gender : </label>
+              <input type="radio" name="gender" value="male" checked />Male
+              <input type="radio" name="gender" value="female" />Female
+            </div>
+            <div class="date" id="date">
+              <span class="icon"><i class="bx bxs-calendar"></i></span>
+              <label for="">Date Of Birth :</label>
+              <input type="date" required />
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+              <input type="password" id="password" required />
+              <label for="">Password</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-lock"></i></span>
+              <input type="password" id="confpass" required />
+              <label for="">Confirm Password</label>
+            </div>
+            <div class="check">
+              <label for=""
+                ><input type="checkbox" id="checkedd" />I accept all terms &
+                conditions</label
+              >
+            </div>
+            <button type="submit" class="main-btn">Register Now!</button>
+            <div class="register">
+              <p>
+                 Already have an account?
+                <a href="#" class="login-link">Login</a>
+              </p>
+            </div>
+          </form>
+        </div>
+        <span class="rocket-icon">
+          <div class="bx bx-rocket"></div>
+        </span>
+      </div>
+    </div>
+    <footer>
+      <p>SpaceTD &copy; 2023</p>
+      <li><a class="navbutton" href="https://twitter.com/SpaceX"> Twitter</a></li>
+      <li><a class="navbutton" href="https://www.youtube.com/@SpaceX">YouTube</a></li>
+      <li><a class="navbutton" href="">Contact Us</a></li>
+    </footer>
+
+    <script>
+      feather.replace();
+    </script>
+    <script src="/JS/hci.js"></script>
+  </body>
+</html>
